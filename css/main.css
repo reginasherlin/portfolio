@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300&display=swap");
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat',sans-serif;
+  color: white;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-container {
+  background: #6700EE;
+  width: 100%;
+}
+
+.nav-container, header, nav ul, .social-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo {
+  width: 100%;
+  font-size: 1em;
+  color: #00F7FF;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  padding: 2em 2em;
+}
+
+.nav-desktop, .social-header {
+  display: none;
+}
+
+.hero {
+  background-color: #6E00FF;
+  padding: 4em;
+}
+
+.content {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.content__header {
+  padding-top: 1em;
+  font-family: 'Poppins', arial, sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.content__desc {
+  margin: 0 auto;
+}
+
+.content__desc span {
+  margin-right: .5em;
+}
+
+.content .scroll {
+  margin: 4em 0;
+  animation: scrollAnimate 1s infinite alternate-reverse;
+}
+
+.content .scroll img {
+  width: 25px;
+}
+
+.project {
+  position: relative;
+  color: #000;
+}
+
+.project__content {
+  text-align: center;
+  padding: 2em;
+}
+
+.project__header {
+  margin-top: 4em;
+  text-transform: uppercase;
+  color: #6E00FF;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .2em;
+  font-size: .85em;
+}
+
+.project__title {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: .4em;
+  display: block;
+}
+
+.project__desc {
+  color: #252525;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  font-size: .9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.project__snap {
+  width: 100%;
+}
+
+.project::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: #ddd;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1050px) {
+  header {
+    width: 66%;
+    background: #6700EE;
+    padding: 2em 4em;
+  }
+  nav {
+    padding-left: 15em;
+  }
+  nav ul li {
+    padding-right: 2em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 2em;
+  }
+  .social-header ul li {
+    padding-right: 2em;
+  }
+  .social-header i {
+    font-size: large;
+  }
+  .social-header a {
+    color: black;
+  }
+  .hero {
+    background-color: #6E00FF;
+    height: 100vh;
+    width: 66%;
+    padding: 0 4em;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    width: 66%;
+    background: #6700EE;
+    padding: 2em 4em;
+  }
+  nav {
+    padding-left: 15em;
+  }
+  nav ul li {
+    padding-right: 2em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 2em;
+  }
+  .social-header ul li {
+    padding-right: 2em;
+  }
+  .social-header i {
+    font-size: large;
+  }
+  .social-header a {
+    color: black;
+  }
+  .hero {
+    background-color: #6E00FF;
+    height: 100vh;
+    width: 66%;
+    padding: 0 4em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    width: 66%;
+    background: #6700EE;
+    padding: 2em 4em;
+  }
+  nav {
+    padding-left: 15em;
+  }
+  nav ul li {
+    padding-right: 2em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 2em;
+  }
+  .social-header ul li {
+    padding-right: 2em;
+  }
+  .social-header i {
+    font-size: large;
+  }
+  .social-header a {
+    color: black;
+  }
+  .hero {
+    background-color: #6E00FF;
+    height: 100vh;
+    width: 66%;
+    padding: 0 4em;
+  }
+}
+
+@-webkit-keyframes scrollAnimate {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes scrollAnimate {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+/*# sourceMappingURL=main.css.map */
